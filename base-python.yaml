@@ -1,0 +1,30 @@
+# base-python.yaml
+id: base-python-001
+type: base
+name: "Python Base Setup"
+content: |
+  # Python Project Setup
+
+  ## Project Structure
+  ```
+  project/
+  ├── src/
+  │   └── __init__.py
+  ├── tests/
+  │   └── __init__.py
+  └── README.md
+  ```
+
+  ## Basic .gitignore
+  ```
+  __pycache__/
+  *.py[cod]
+  *$py.class
+  .Python
+  build/
+  develop-eggs/
+  dist/
+  downloads/
+  eggs/
+  .eggs/
+  ```

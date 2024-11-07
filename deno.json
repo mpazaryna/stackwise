@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-write main.ts",
+    "test": "deno test --allow-read --allow-write --allow-run main_test.ts",
+    "test:watch": "deno test --allow-read --allow-write --allow-run --watch main_test.ts",
+    "example:python": "deno task start python,conda",
+    "example:deno": "deno task start deno"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

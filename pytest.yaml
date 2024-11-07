@@ -1,0 +1,32 @@
+# pytest.yaml
+id: python-pytest-001
+type: module
+name: "Pytest Configuration"
+requires: ["base-python-001"]
+content: |
+  ## Pytest Setup
+
+  ### Test Configuration
+  Create `pytest.ini`:
+  ```ini
+  [pytest]
+  testpaths = tests
+  python_files = test_*.py
+  python_functions = test_*
+  ```
+
+  ### Example Test
+  Create `tests/test_example.py`:
+  ```python
+  def test_example():
+      assert True
+
+  def test_with_fixture(tmp_path):
+      assert tmp_path.is_dir()
+  ```
+
+  ### Install Pytest
+  With conda:
+  ```bash
+  conda install pytest
+  ```

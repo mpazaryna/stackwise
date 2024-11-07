@@ -1,0 +1,99 @@
+# node-base.yaml
+id: base-node-001
+type: base
+name: "Node.js Base Setup"
+content: |
+  # Node.js Project Setup
+
+  ## Project Structure
+  ```
+  project/
+  ├── src/
+  │   └── index.js
+  ├── tests/
+  │   └── index.test.js
+  ├── package.json
+  ├── package-lock.json
+  ├── .eslintrc.json
+  ├── .prettierrc
+  └── README.md
+  ```
+
+  ## Configuration Files
+
+  ### package.json
+  ```json
+  {
+    "name": "project-name",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js",
+      "test": "jest",
+      "lint": "eslint .",
+      "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "eslint": "^8.0.0",
+      "prettier": "^3.0.0"
+    }
+  }
+  ```
+
+  ### .eslintrc.json
+  ```json
+  {
+    "env": {
+      "node": true,
+      "es2022": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "warn"
+    }
+  }
+  ```
+
+  ### .prettierrc
+  ```json
+  {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2
+  }
+  ```
+
+  ## Basic .gitignore
+  ```
+  node_modules/
+  coverage/
+  .env
+  .env.local
+  .DS_Store
+  npm-debug.log*
+  yarn-debug.log*
+  yarn-error.log*
+  ```
+
+  ## VSCode Settings
+  ### .vscode/settings.json
+  ```json
+  {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+  ```
