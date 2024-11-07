@@ -1,5 +1,7 @@
 # Stackwise
 
+[![Deno](https://github.com/mpazaryna/stackwise/actions/workflows/deno.yml/badge.svg)](https://github.com/mpazaryna/stackwise/actions/workflows/deno.yml)
+
 Stackwise is a project focused on collecting, organizing, and combining high-value development patterns and best practices to enhance developer workflows with Large Language Models (like in Cursor), but it's not Cursor-specific.
 
 ## Overview
