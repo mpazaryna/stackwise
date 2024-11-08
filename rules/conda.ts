@@ -1,4 +1,4 @@
-// src/rules/conda.ts
+// rules/conda.ts
 export default {
   id: 'python-conda-001',
   type: 'module' as const,
@@ -17,3 +17,14 @@ dependencies:
   - python=3.9
   - pip
 \`\`\`
+
+### Setup Commands
+\`\`\`bash
+# Create environment
+conda env create -f environment.yml
+
+# Activate environment
+conda activate project-env
+\`\`\`
+`
+};
